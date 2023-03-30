@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    background-color: #ffffff;
+    overflow-x: hidden;
+    font-family: roboto;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+}
+
+.my-flex {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+.my-slider .slider-wrapper div {
+    position: relative;
+}
+
+.my-slider .slider-wrapper {
+    margin-top: 50vw;
+    margin-left: 11vw;
+}
+
+.my-slider .slide-image {
+    height: 24vw;
+}
+
+.my-slider .slide-image img {
+    width: 24vw;
+    cursor: pointer;
+}
+
+.my-slider .slider-content {
+    width: 25vw;
+    color: #000000;
+    padding: 3vw 18vw 3vw 9vw;
+}
+
+.my-slider .slider-date {
+    color: #0a8acb;
+    font-size: 1.1vw;
+    font-weight: 400;
+    letter-spacing: 0.1vw;
+    padding-bottom: 1.4vw;
+}
+
+.my-slider .slider-title {
+    font-size: 1.2vw;
+    font-weight: 400;
+    letter-spacing: 0.1vw;
+    line-height: 1.55vw;
+    padding-bottom: 1.8vw;
+}
+
+.my-slider .slider-text {
+    font-size: 0.80vw;
+    line-height: 1.2vw;
+    opacity: 0.8;
+    padding-bottom: 4vw;
+}
+
+.my-slider .slider-more {
+    font-weight: 400;
+    letter-spacing: 0.1vw;
+    float: left;
+    font-size: 0.9vw;
+}
+
+.my-slider .slide-bullet {
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: #0b8bcc;
+    border-radius: 200%;
+    position: relative;
+    margin-left: 1.2vw;
+}
+
+.my-slider .slide-nav {
+    margin-left: 64vw;
+    margin-top: -5.5vw;
+}
+
+.my-slider .slider-link .slider-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: 0.5s ease all;
+}
+
+.my-slider .slider-link:hover .slider-overlay {
+    background-color: rgba(13, 27, 43, 0.5);
+}
+
+.my-slider .slider-arrows {
+    width: 3.5vw;
+    margin-top: -5.8vw;
+    margin-left: 72vw;
+    position: relative;
+}
+
+.my-slider .arrow {
+    display: inline-block;
+    position: absolute;
+    width: 1.2vw;
+    height: 1.2vw;
+    background: transparent;
+    text-indent: -9999px;
+    border-top: 0.15vw solid #000000;
+    border-left: 0.15vw solid #000000;
+    transition: all .1s ease-in-out;
+    text-decoration: none;
+    color: transparent;
+}
+
+.my-slider .arrow:hover {
+    border-color: #0A8ACB;
+    border-width: 0.25vw;
+}
+
+.my-slider .arrow:before {
+    display: block;
+    height: 200%;
+    width: 200%;
+    margin-left: -50%;
+    margin-top: -50%;
+    content: "";
+    transform: rotate(45deg);
+}
+
+.my-slider .arrow.prev {
+    transform: rotate(-45deg);
+    left: 0;
+}
+
+.my-slider .arrow.next {
+    transform: rotate(135deg);
+    right: 0;
+}

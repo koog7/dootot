@@ -1,0 +1,74 @@
+.card__custom {
+    background: #F7F7F7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 32px;
+}
+    
+.card__custom:hover {
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1),
+        0 10px 8px rgba(0, 0, 0, 0.015);
+    transform: scale(1.1);
+    transition-duration: 1s;
+
+}
+@media (max-width: 760px) {
+    .card__custom:hover {
+        box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1),
+            0 10px 8px rgba(0, 0, 0, 0.015);
+        transform: scale(1.0);
+        transition-duration: 0s;
+    
+    }
+}
+.border-right{
+    border-right:none;
+}
+
+
+.text__custom__price {
+    font-family: 'Raleway', sans-serif !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 113px;
+    text-align: center;
+    color: #312A20;
+}
+
+.div_part {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    /* identical to box height */
+    color: #2C2C2C;
+}
+
+.form-control {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #ced4da;
+}
+
+p {
+    color: #575656;
+}
+
+.v-line {
+    border-left: 2px solid #949191;
+    height: 100%;
+    width: 1px;
+    margin: 0 auto;
+}
+
+.form-control__custom:focus {
+    color: #212529;
+    background-color: none !important;
+    border-color: none !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+.white_menu{
+    background-color: #fff;
+}
